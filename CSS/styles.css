@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap'); 
+body{
+    background-image: url("../Images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#main-text {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    margin: 0%;
+    font-family: "Rubik Storm", sans-serif;
+    background-image: linear-gradient(red, green,yellow);
+    background-size: 100%;
+    font-size: 70px;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+  -moz-text-fill-color: transparent; 
+    animation: font-animation 5s ease-in-out;
+}
+#birds{
+    position: absolute;
+    top:0%;
+    left: -110%;
+    animation: birds 10s ease-in infinite;
+}
+#birds2{
+    position: absolute;
+    top:0%;
+    left: -110%;
+    animation: birds 10s ease-in infinite;
+    animation-delay: 3s;
+}
+#deer{
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    transition: 5s ease-in;
+    animation: animals-deer 2s ease-in forwards;
+}
+#lion{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    z-index: 4;
+    transition: 5s ease-in;
+    animation: animals-lion 2s ease-in forwards;
+}
+#elephant{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    z-index: 3;
+    transition: 5s ease-in;
+    animation: animals-elephant 2s ease-in forwards;}
+#snake{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    transition: 5s ease-in;
+    animation: animals-snake 2s ease-in forwards;
+}
+#monkey{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    transition: 2s all;
+    animation: animals-monkey 2s ease-in forwards;
+}
+#monkey:hover{
+    transform: translatey(-200px);
+}
+#snake:hover{
+    transform: translateX(50px) translateY(100px);
+}
+#elephant:hover{
+    transform: translateX(-150px);
+}
+#deer:hover{ 
+    transform: translateX(-400px) translateY(100px);
+}
+#lion:hover{
+    transform: scaleX(2);
+}
+
+@keyframes font-animation {
+    from{
+        top: 50%;
+        left: 25%;
+        transform: scaleX(1.5);
+    }
+    to{
+        top: 0%;
+        left: 25%;
+        transform: scaleX(1);
+    }
+    
+}
+@keyframes elephant-hitting {
+    0%{
+        top: 70%;
+        left: 45%;
+        transform: scaleX(1.5);
+
+    }
+    34%{
+        top: 70%;
+        left: 25%;
+        transform: scaleX(2.5) scaleY(2.5);
+    }
+    64%{
+        top: 70%;
+        left: 5%;
+        transform: scaleX(2.5) scaleY(2.5);
+    }
+    100%{
+        top: 70%;
+        left: -100%;
+    }
+}
+@keyframes snake-transformimg {
+    from{
+        top: 70%;
+        left: 25%;
+        transform: scaleX(2.5) scaleY(2.5);
+    }
+    to{
+        top: 80%;
+        left: 110%;
+    }
+}
+@keyframes eatting-lion {
+    0%{
+        top: 70%;
+        left: 65%;
+        transform: scaleX(1.5);
+
+    }
+    25%{
+        top: 70%;
+        left: 45%;
+        transform: scaleX(2) scaleY(2);
+    }
+    50%{
+        top: 70%;
+        left: 25%;
+        transform: scaleX(2.5) scaleY(2.5);
+    }
+    75%{
+        top: 70%;
+        left: 5%;
+        transform: scaleX(3) scaleY(3);
+    }
+    100%{
+        top: 70%;
+        left: -100%;
+    }
+    
+}
+@keyframes animals-deer {
+
+    from{
+        top: 70%;
+        left: 110%;
+    }
+    to{
+        top: 70%;
+        left: 85%;
+    }
+    
+}
+@keyframes animals-deer-hover {
+
+    to{
+        transform: translateX(-200px) translateY(-100px);
+    }
+    from{
+        transform: translateX(-400px) translateY(100px);
+    }
+}
+@keyframes birds{
+    from{
+        top: 10%;
+        left: 110%
+        
+    }
+    to{
+        top:10%;
+        left: -110%;
+        
+    }
+    
+}
+@keyframes animals-lion {
+
+    from{
+        top: 70%;
+        left: 0%;
+    }
+    to{
+        top: 70%;
+        left: 65%;
+    }
+    
+}
+@keyframes animals-elephant {
+
+    from{
+        top: 70%;
+        left: 0%;
+    }
+    to{
+        top: 70%;
+        left: 45%;
+    }
+    
+}
+@keyframes animals-snake {
+
+    from{
+        top: 70%;
+        left: 0%;
+    }
+    to{
+        top: 70%;
+        left: 25%;
+    }
+    
+}
+@keyframes animals-monkey {
+
+    from{
+        top: 70%;
+        left: 0%;
+    }
+    to{
+        top: 70%;
+        left: 5%;
+    }
+    
+}
